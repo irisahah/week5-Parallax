@@ -1,0 +1,196 @@
+:root {
+    --dark-color: #2e282d;
+    --medium-color:#a9b7ec;
+    --medium-transparent: #a9b7eca4;
+    --light-color: #f2f3f5;
+}
+
+@font-face {
+    font-family: myQS;
+    src: url("../fonts/Quicksand-Medium.ttf");
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light-color);
+    font-family: myQS;
+    text-align: center;
+}
+
+.intro-image {
+    background-attachment: fixed;
+    background-image: url("../image/pilt2.jpg");
+    background-size: cover;
+    background-position: bottom;
+    height: 600px;
+    position: relative;
+}
+
+.intro-image__link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.intro-image__link a {
+    border: 1.5px solid var(--dark-color);
+    display: inline-block;
+    background-color: var(--medium-transparent);
+    color: var(--dark-color);
+    font-size: 3rem;
+    padding: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+}
+
+.intro-image__link a:hover, .quality-image__link a:hover, .origin-image__link a:hover {
+    transform: scale(1.2);
+}
+
+.intro-text {
+    display: flex;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    height: 250px;
+    padding: 0 15rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-text h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+
+
+.quality-image {
+    background-attachment: fixed;
+    background-image: url("../image/pilt1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quality-image__link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.quality-image__link a {
+    border: 1.5px solid var(--light-color);
+    display: inline-block;
+    background-color: var(--medium-transparent);
+    color: var(--dark-color);
+    font-size: 3rem;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+}
+
+.quality-text {
+    display: flex;
+    background-color: var(--medium-color);
+    color: var(--dark-color);
+    height: 250px;
+    padding: 0 15rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.quality-text h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+
+
+.origin-image {
+    background-attachment: fixed;
+    background-image: url("../image/pilt5.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.origin-image__link a {
+    border: 2px solid var(--dark-color);
+    display: inline-block;
+    background-color: var(--light-color);
+    color: var(--medium-color);
+    font-size: 3rem;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+}
+
+.origin-text {
+    display: flex;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    height: 250px;
+    padding: 0 15rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.origin-text h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+
+.footer {
+    height: 250px;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    font-size: 1.5rem;
+
+}
+
+.contact {
+    padding-top: 2rem;
+}
+
+.contact ul li {
+    display: inline-block;
+    margin: 1rem;
+}
+
+.contact ul li a {
+    text-decoration: none;
+    color: var(--dark-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.contact ul li a:hover {
+    color: var(--medium-color);
+}
+
+.footer p{
+    margin-top: 2rem;
+}
+
+
